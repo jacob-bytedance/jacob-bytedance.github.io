@@ -28,7 +28,7 @@
     .category {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
     h2 {
       font-size: 20px;
@@ -52,7 +52,7 @@
       font-size: 16px;
       background-color: #007aff;
       border-radius: 15px;
-      text-align: center;
+      text-align: left;
       width: 100%;
     }
     a:hover {
@@ -65,43 +65,47 @@
 <h1>Jacob Wu | Links</h1>
 
 <div class="grid-container">
+  <!-- Column 1: Metrics Bank Specs -->
   <div class="category">
-    <h2>Metrics Bank</h2>
+    <h2>Metrics Bank Specs</h2>
     <ul>
-      <li><a href="https://bytedance.larkoffice.com/wiki/BqtFwgaRmi9eapkEKZncz1eOnje">Consumption & Rendering</a></li>
-      <li><a href="https://bytedance.us.larkoffice.com/slides/QOcWsTxmJliO1Wdu6KXu7ObvsSf">Tech Design</a></li>
-      <li><a href="http://localhost:8080/metric">Local Testing</a></li>
-      <li><a href="https://bytedance.us.larkoffice.com/docx/Eo0gdtoiRovrNbxgoXauM1VssTg">Testing and Deployment</a></li>
-      <li><a href="https://bytedance.us.larkoffice.com/docx/XJ50dBZaeo69BjxoG38ueFDfszh">Technical Implementation</a></li>
+      <li><a href="https://bytedance.larkoffice.com/wiki/BqtFwgaRmi9eapkEKZncz1eOnje">📊 Consumption & Rendering (Wiki)</a></li>
+      <li><a href="https://bytedance.us.larkoffice.com/slides/QOcWsTxmJliO1Wdu6KXu7ObvsSf">🛠 Tech Design (Jacob)</a></li>
+      <li><a href="https://bytedance.us.larkoffice.com/docx/XJ50dBZaeo69BjxoG38ueFDfszh">💻 Technical Implementation (Jacob)</a></li>
+      <li><a href="https://bytedance.us.larkoffice.com/docx/Eo0gdtoiRovrNbxgoXauM1VssTg">🚀 Testing and Deployment (Jacob)</a></li>
+      <li><a href="https://bytedance.us.larkoffice.com/docx/XnuudNXxsodUqLxZJEKcD1WqnOf">📑 Tech Spec (Sicong)</a></li>
     </ul>
   </div>
 
+  <!-- Column 2: Metrics Bank Actions -->
   <div class="category">
-    <h2>Metrics Bank</h2>
+    <h2>Metrics Bank Actions</h2>
     <ul>
-      <li><a href="https://cloud-i18n.bytedance.net/scm/detail/379077/versions?parentUrl=/favor">Build</a></li>
-      <li><a href="https://cloud-boe.bytedance.net/tce/services/200219973?cluster-type=cluster&page=1&page_size=10">Deploy to BOE</a></li>
-      <li><a href="https://cloud-boe.bytedance.net/tce/services/200219973?cluster-type=cluster&page=1&page_size=10">Deploy to PPE</a></li>
-      <li><a href="https://mmm.tiktok-row.net/gcrm_overseas/metricsbank">PPE Instance</a></li>
-      <li><a href="https://mmm-boe-va.bytedance.net/gcrm_overseas/metricsbank">BOE Instance</a></li>
-      <li><a href="https://bytedance.larkoffice.com/docx/XnuudNXxsodUqLxZJEKcD1WqnOf">Tech Spec (Sicong)</a></li>
+      <li><a href="http://localhost:8080/metric">🔍 Local Testing</a></li>
+      <li><a href="https://cloud-i18n.bytedance.net/scm/detail/379077/versions?parentUrl=/favor">🔧 Build</a></li>
+      <li><a href="https://cloud-boe.bytedance.net/tce/services/200219973?cluster-type=cluster&page=1&page_size=10">📦 Deploy to BOE</a></li>
+      <li><a href="https://cloud-boe.bytedance.net/tce/services/200219973?cluster-type=cluster&page=1&page_size=10">📦 Deploy to PPE</a></li>
+      <li><a href="https://mmm-boe-va.bytedance.net/gcrm_overseas/metricsbank">🔗 BOE Instance</a></li>
+      <li><a href="https://mmm.tiktok-row.net/gcrm_overseas/metricsbank">🔗 PPE Instance</a></li>
     </ul>
   </div>
 
+  <!-- Column 3: Tools and Resources -->
   <div class="category">
     <h2>Tools and Resources</h2>
     <ul>
-      <li><a href="https://meego.larkoffice.com">Meego</a></li>
-      <li><a href="https://cloud-boe.bytedance.net/ses/frame?link=https://kibana-bytees-boei18n.bytedance.net/kibana/byte.es.demo_21_7/boei18n/app/kibana%23/dev_tools/console?_g%3D()&simpleLayout=1&es_region=boe-i18n">ByteES Elasticsearch</a></li>
-      <li><a href="https://code.byted.org/cg/gcrm-overseas-metrics-bank">Code</a></li>
-      <li><a href="https://github.com">Github</a></li>
+      <li><a href="https://meego.larkoffice.com">📁 Meego</a></li>
+      <li><a href="https://cloud-boe.bytedance.net/ses/frame?link=https://kibana-bytees-boei18n.bytedance.net/kibana/byte.es.demo_21_7/boei18n/app/kibana%23/dev_tools/console?_g%3D()&simpleLayout=1&es_region=boe-i18n">🔍 ByteES Elasticsearch</a></li>
+      <li><a href="https://code.byted.org/cg/gcrm-overseas-metrics-bank">💻 Code</a></li>
+      <li><a href="https://github.com">🐱 Github</a></li>
     </ul>
   </div>
 
+  <!-- Column 4: Work Reports -->
   <div class="category">
-    <h2>Work Reports</h2>
+    <h2>Other</h2>
     <ul>
-      <li><a href="https://bytedance.us.larkoffice.com/docx/GYfxdHk3dog1XCxNU5TuJcHEs6e">Weekly Work Report (Jacob)</a></li>
+      <li><a href="https://bytedance.us.larkoffice.com/docx/GYfxdHk3dog1XCxNU5TuJcHEs6e">📝 Weekly Work Report (Jacob)</a></li>
     </ul>
   </div>
 </div>
