@@ -58,11 +58,43 @@
     a:hover {
       background-color: #005bb5;
     }
+    .search-container {
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 600px;
+    }
+    .search-container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 15px;
+      border: 1px solid #ccc;
+    }
+    .search-container input[type="submit"] {
+      margin-top: 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 15px;
+      background-color: #007aff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .search-container input[type="submit"]:hover {
+      background-color: #005bb5;
+    }
   </style>
 </head>
 <body>
 
 <h1>Jacob Wu | Links</h1>
+
+<div class="search-container">
+  <form action="https://www.google.com/search" method="get" target="_blank">
+    <input type="text" name="q" placeholder="Search with Google..." id="google-search-bar">
+    <input type="submit" value="Search">
+  </form>
+</div>
 
 <div class="grid-container">
   <!-- Column 1: Metrics Bank Specs -->
@@ -107,9 +139,16 @@
     <h2>Other</h2>
     <ul>
       <li><a href="https://bytedance.us.larkoffice.com/docx/GYfxdHk3dog1XCxNU5TuJcHEs6e">📝 Weekly Work Report (Jacob)</a></li>
+      <li><a href="https://jacob-bytedance.github.io/notes/">📔 Jacob's Notes (Jacob)</a></li>
     </ul>
   </div>
 </div>
+
+<script>
+  window.onload = function() {
+    document.getElementById("google-search-bar").focus();
+  };
+</script>
 
 </body>
 </html>
