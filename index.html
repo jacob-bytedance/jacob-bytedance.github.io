@@ -83,6 +83,35 @@
     .search-container input[type="submit"]:hover {
       background-color: #005bb5;
     }
+
+    /* Collapsible Section */
+    .collapsible {
+      background-color: #eee;
+      color: #333;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+    .collapsible:after {
+      content: '\002B'; /* Unicode character for "plus" sign (+) */
+      font-size: 1rem;
+      float: right;
+    }
+    .collapsible.active:after {
+      content: '\2212'; /* Unicode character for "minus" sign (−) */
+    }
+    .collapsible-content {
+      display: none;
+      overflow: hidden;
+      background-color: #f9f9f9;
+      padding: 10px 20px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -152,10 +181,32 @@
   </div>
 </div>
 
+<!-- Collapsible Section for Infrequently Used Links -->
+<button class="collapsible">Show Infrequently Used Links</button>
+<div class="collapsible-content">
+  <div class="category">
+    <h2>Infrequently Used Links</h2>
+    <ul>
+      <li><a href="https://cloud-i18n.bytedance.net/tce/services/500127545">[MB] TCE Sandbox</a></li>
+      <li><a href="https://cloud-i18n.bytedance.net/tce/services/2418100">[MB] TCE i18n</a></li>
+      <li><a href="https://example.com">🔗 Infrequent Link 3</a></li>
+    </ul>
+  </div>
+</div>
+
 <script>
   window.onload = function() {
     document.getElementById("google-search-bar").focus();
   };
+
+  // Toggle collapsible content
+  const collapsibleButton = document.querySelector(".collapsible");
+  const collapsibleContent = document.querySelector(".collapsible-content");
+
+  collapsibleButton.addEventListener("click", () => {
+    collapsibleButton.classList.toggle("active");
+    collapsibleContent.style.display = collapsibleContent.style.display === "block" ? "none" : "block";
+  });
 </script>
 
 </body>
